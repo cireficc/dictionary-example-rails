@@ -1,24 +1,7 @@
-# README
+w1 = Word.create
+w2 = Word.create
+word_translation = WordTranslation.create(source_id: w1.id, destination_id: w2.id)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+e1 = Example.create
+e2 = Example.create
+example_translation = ExampleTranslation.create(source_id: e1.id, destination_id: e2.id)
