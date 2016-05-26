@@ -1,0 +1,17 @@
+<%= form_for(example_translation) do |f| %>
+  <% if example_translation.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(example_translation.errors.count, "error") %> prohibited this example_translation from being saved:</h2>
+
+      <ul>
+      <% example_translation.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
